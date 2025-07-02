@@ -1,0 +1,30 @@
+{
+  "name": "api-rest",
+  "version": "1.0.0",
+  "description": "Estudo de Node.js e Typescript com foco em API Rest",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Possomato/estudo-node-v1.git"
+  },
+  "keywords": [],
+  "author": "Gabriel Possomato",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Possomato/estudo-node-v1/issues"
+  },
+  "homepage": "https://github.com/Possomato/estudo-node-v1#readme",
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.0.10",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
