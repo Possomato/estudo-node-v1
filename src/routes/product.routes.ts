@@ -1,6 +1,6 @@
 import { Router } from 'express'
 import { ProductController } from '../controller/ProductController'
-import { checkCategory } from '../middlewares/checkCategory'
+import { checkCategory } from '../middlewares/check'
 
 const productRouter = Router()
 const productController = new ProductController()
