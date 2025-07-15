@@ -4,7 +4,8 @@
   "description": "Estudo de Node.js e Typescript com foco em API Rest",
   "main": "index.js",
   "scripts": {
-    "dev": "tsx watch src/server.ts"
+    "dev": "tsx watch src/server.ts",
+    "knex": "node --import tsx ./node_modules/.bin/knex"
   },
   "repository": {
     "type": "git",
