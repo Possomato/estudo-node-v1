@@ -15,17 +15,24 @@ export class CoursesController {
     res.send(courses)
   }
 
-  async show(req: Request, res: Response){
-    const {id} = req.params
-    const coursesFiltered = await knex('courses').where({id})
+  async show(req: Request, res: Response) {
+    const { id } = req.params
+    const coursesFiltered = await knex('courses').where({ id })
     res.send(coursesFiltered)
   }
 
   async update(req: Request, res: Response) {
     const { id } = req.params
-    const {name} = req.body
+    const { name } = req.body
 
     await knex('courses').update({ name }).where({ id })
     res.json(name)
+  }
+
+  async delete(req: Request, res: Response) {
+    const { id } = req.params
+
+    await knex('courses').delete().where({ id })
+    res.send('Course deleted')
   }
 }

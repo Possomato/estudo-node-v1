@@ -8,5 +8,6 @@ coursesRouter.post('/', coursesController.create)
 coursesRouter.get('/', coursesController.index)
 coursesRouter.put('/:id', coursesController.update)
 coursesRouter.get('/:id', coursesController.show)
+coursesRouter.delete('/:id', coursesController.delete)
 
 export {coursesRouter}
